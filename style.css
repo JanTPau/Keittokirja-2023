@@ -9,3 +9,8 @@ h1 {
 p {
     font-size: 50px;
 }
+body {
+    background-image: url('Keittokirja-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
