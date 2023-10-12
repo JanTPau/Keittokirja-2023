@@ -1,9 +1,12 @@
 .center-text {
     text-align: center;
 }
+html, body {
+    height: 100%; /* Ensure the HTML and body take up the full viewport height */
+}
 
 .scrollable-content {
-    max-height: 400px; /* Adjust the max-height to your preference */
+    min-height: 100%;
     overflow-y: auto;
 }
 h1 {
