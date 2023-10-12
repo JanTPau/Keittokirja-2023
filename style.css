@@ -20,7 +20,7 @@ p {
 .background-image {
     width: 100%;
     height: 100vh; /* Set the height to fill the viewport */
-    background-image: url('your-background-image.jpg'); /* Specify your background image */
+    background-image: url(Keittokirja-background.jpg); /* Specify your background image */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
