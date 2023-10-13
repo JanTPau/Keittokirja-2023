@@ -45,7 +45,7 @@ p.center-text {
 }
 .image1 {
     margin: 0 auto; /* Center the image horizontally */
-    margin-left: 200px; /* Add a margin to the right to push it to the left */
+    margin-left: 100px; /* Add a margin to the right to push it to the left */
 }
 .image2 {
     margin: 0 auto; /* Center the image horizontally */
