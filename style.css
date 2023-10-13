@@ -1,3 +1,10 @@
+* {
+    text-shadow:
+        -1px -1px 0 #000, /* Top-left shadow (offset by -1px) */
+        1px -1px 0 #000, /* Top-right shadow (offset by 1px) */
+        -1px 1px 0 #000, /* Bottom-left shadow (offset by -1px) */
+        1px 1px 0 #000; /* Bottom-right shadow (offset by 1px) */
+}
 .center-text {
     text-align: center;
 }
