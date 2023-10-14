@@ -54,3 +54,18 @@ p.center-text {
 .image3 {
     margin: 0 auto; /* Center the image horizontally */
 }
+.recipe-instructions {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.recipe-list {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Additional styles for consistency */
+.recipe-instructions, .recipe-list {
+    color: #333; /* Text color */
+    font-size: 40px;
+}
