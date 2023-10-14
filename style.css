@@ -66,6 +66,6 @@ p.center-text {
 
 /* Additional styles for consistency */
 .recipe-instructions, .recipe-list {
-    color: #333; /* Text color */
+    color: red; /* Text color */
     font-size: 40px;
 }
