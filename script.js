@@ -11,3 +11,6 @@ dropdown.addEventListener('change', function() {
     const selectedRecipe = document.getElementById(selectedValue);
     selectedRecipe.style.display = 'block';
 });
+
+const initialRecipe = document.getElementById('ingredients');
+initialRecipe.style.display = 'block';
