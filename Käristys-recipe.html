@@ -9,35 +9,59 @@
     <div class="center-text scrollable-content">
         <h1>Hirvenkäristys</h1>
         <p class="center-text">Suussa sulavaa oluessa haudutettua hirvenkäristystä.</p>
-        <p class="recipe-instructions">
-            Ainesosat: (ohjeen määristä tulee noin 3 annosta)
-        </p>
-        <ul class="recipe-list">
-            <li>noin 300g grammaa pakastettua hirvenlihaa</li>
-            <li>punasipuli</li>
-            <li>3dl vaaleaa laageria</li>
-            <li>mausteet (suolaa ja mustapippuria maun mukaan ja 2-3 laakerinlehteä.)</li>
-        </ul>
-        <p class="recipe-instructions">
-            Perunamuusi
-        </p>
-        <ul class="recipe-list">
-            <li>noin puoli kiloa perunaa</li>
-            <li>reilu nokare voita</li>
-            <li>reilu löräys maitoa</li>
-            <li>mausteet (suolaa maun mukaan, vapaaehtoisesti esim valkosipuli jauhetta ja/tai timjamia)</li>
-        </ul>
-        <p class="recipe-instructions">
-            Valmistus:
-        </p>
-        <ul class="recipe-list">
-            <li>Leikkaa liha ohuiksi siivuiksi ja paista pienissä erissä keskikovalla lämmöllä padan pohjalla.</li>
-            <li>Kuori ja pieni punasipuli, kuullota padassa muutaman minuutin ajan.</li>
-            <li>Lisää liha takaisin pataan, kaada olut päälle. Jos kaikki lihat eivät peity, lisää vettä.</li>
-            <li>Hauduta pataa keskilämmöllä noin 1,5 - 2 tuntia. Tarkista välillä ja lisää nestettä tarvittaessa.</li>
-        </ul>
+
+        <select id="recipe-dropdown">
+            <option value="ingredients">Ainesosat</option>
+            <option value="käristys">Käristys</option>
+            <option value="perunamuusi">Perunamuusi</option>
+            <option value="valmistus">Valmistus</option>
+        </select>
+
+        <div id="recipe-section">
+            <p class="recipe-instructions">
+                Ainesosat: (ohjeen määristä tulee noin 3 annosta)
+            </p>
+            <ul class="recipe-list">
+                <li>noin 300g grammaa pakastettua hirvenlihaa</li>
+                <li>punasipuli</li>
+                <li>3dl vaaleaa laageria</li>
+                <li>mausteet (suolaa ja mustapippuria maun mukaan ja 2-3 laakerinlehteä.)</li>
+            </ul>
+            <p class="recipe-instructions">
+                Käristys
+            </p>
+            <ul class="recipe-list">
+                <li>Leikkaa liha ohuiksi siivuiksi ja paista pienissä erissä keskikovalla lämmöllä padan pohjalla.</li>
+                <li>Kuori ja pieni punasipuli, kuullota padassa muutaman minuutin ajan.</li>
+                <li>Lisää liha takaisin pataan, lisää mausteet, kaada olut päälle. Jos kaikki lihat eivät peity, lisää vettä.</li>
+                <li>Hauduta pataa keskilämmöllä noin 1,5 - 2 tuntia. Tarkista välillä ja lisää nestettä tarvittaessa.</li>
+            </ul>
+            <p class="recipe-instructions">
+                Perunamuusi
+            </p>
+            <ul class="recipe-list">
+                <li>noin puoli kiloa perunaa</li>
+                <li>reilu nokare voita</li>
+                <li>reilu löräys maitoa</li>
+                <li>mausteet (suolaa maun mukaan, vapaaehtoisesti esim valkosipulijauhetta ja/tai timjamia)</li>
+            </ul>
+            <p class="recipe-instructions">
+                Valmistus
+            </p>
+            <ul class="recipe-list">
+                <li>Kuori ja pese perunat.</li>
+                <li>Keitä kypsiksi runsaasti suolatussa vedessä.</li>
+                <li>Muussaa lisäten voita ja maitoa kunnes saavutat haluamasi koostumuksen.</li>
+                <li>Lisää suola ja haluamasi mausteet.</li>
+            </ul>
+            <p class="recipe-instructions">
+                Tarjoile esimerkiksi puolukkasurvoksen kanssa.
+            </p>
+        </div>
         
         <img class="image1" src="Käristys1.jpg" alt="Resepti sivun kuva. Hirven käristys perunamuusilla.">
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
