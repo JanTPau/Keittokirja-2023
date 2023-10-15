@@ -5,11 +5,78 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <a href="index.html">
+        <p class="image-description">Takaisin etusivulle.</p>
+    </a>
     <div class="background-image"></div>
     <div class="center-text scrollable-content">
         <h1>Naudan ulkofilee risotolla</h1>
         <p class="center-text">Pannulla paistettu naudan ulkofileepihvi siivutettuna kasvisliemeen tehdyn risottoriisipedin päälle. </p>
+
+        <select id="recipe-dropdown">
+            <option value="ingredients">Ainesosat</option>
+            <option value="Pihvi">Pihvi</option>
+            <option value="Risotto">Risotto</option>
+        </select>
+
+        <div id="recipe-section">
+            <div id="ingredients" class="recipe-content">
+                <p class="recipe-instructions">
+                    Ainesosat: (ohjeen määristä tulee 2 annosta)
+                </p>
+                <ul class="recipe-list">
+                    <li>Pihveihin:</li>
+                    <li>2 pihviä naudan ulkofileestä.</li>
+                    <li>Reilu nokare voita pihveille.</li>
+                    <li>2-3 kynttä valkosipulia.</li>
+                    <li>Pari oksaa tuoretta timjamia</li>
+                    <li>Suolaa ja mustapippuria.</li>
+                    <li>Rypsiöljyä paistamiseen.</li>
+                    <li>Risottoon:</li>
+                    <li>3dl risotto riisiä.</li>
+                    <li>6dl kasvislientä.</li>
+                    <li>Punasipuli</li>
+                    <li>2-3 valkosipulin kynttä.</li>
+                    <li>Löräys valkoviiniä.</li>
+                    <li>Reilu nokare voita.</li>
+                    <li>Pieni kourallinen juustoraastetta.</li>
+                </ul>
+            </div>
+            <div id="Pihvit" class="recipe-content">
+                <p class="recipe-instructions">
+                    Pihvit
+                </p>
+                <ul class="recipe-list">
+                    <li>Ota pihvit huoneenlämpöön noin 30 min ennen paistoa.</li>
+                    <li>Kuivaa lihan pinnat talouspaperilla.</li>
+                    <li>Painele kaikille pinnoille runsaasti suolaa ja mustapippuria.</li>
+                    <li>Lämmitä pannu erittäin kuumaksi (suosituksena jokin muu kuin tarttumaton pinnallinen pannu esim. valurauta).</li>
+                    <li>Peitä pannun pohja rypsiöljyllä ja lisää pihvit varoen öljyn räiskymistä.</li>
+                    <li>Paista noin minuutin ajan liikuttelematta pihvejä pannulla.</li>
+                    <li>Käännä, ja lisää voi sekä valkosipulin kynnet ja timjamin oksat.</li>
+                    <li>Kallista pannua ja lusikoi sulaa voita pihvien päälle reilun minuutin ajan.</li>
+                    <li>Siirrä lihat sivuun, kaada voi, valkosipulit ja timjami päälle.</li>
+                    <li>Anna levätä 5-10 min ennen leikkaamista.</li>
+                </ul>
+            </div>
+            <div id="risotto" class="recipe-content">
+                <p class="recipe-instructions">
+                    Risotto
+                </p>
+                <ul class="recipe-list">
+                    <li>Pieni punasipuli ja valkosipulin kynnet, kuulota kattilan pohjalla pienessä määrässä rypsiöljyä muutaman minuutin ajan.</li>
+                    <li>Lisää riisi, sekoita sipulia ja riisiä yhteen noin minuutti.</li>
+                    <li>Lisää valkoviini ja anna nesteen höyrystyä noin minuutin jatkuvasti sekoitellen.</li>
+                    <li>Ala lisäämään kasvislientä pieni määrä kerrallaan jatkuvasti sekoittaen.</li>
+                    <li>Anna jo lisäämäsi liemen imeytyä ennen seuraavaa kauhallista. 3dl riisä vaatii suunnilleen 20 minuuttia sekoittamista.</li>
+                    <li>Kun olet imeyttänyt kaiken liemen, poista kattila lämmöltä ja sekoita risottoon nokare voita ja juustoraaste.</li>
+                </ul>
+            </div>
+        </div>
         <img class="image1" src="Risottopihvi1.jpg" alt="Resepti sivun kuva. Naudan ulkofilee risotolla.">
+        <p class="image-description">Tarjoile esimerkiksi paistetun parsan, coleslawn, fetajuuston ja tuoreen kurkun kanssa.</p>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

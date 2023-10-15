@@ -5,11 +5,87 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <a href="index.html">
+        <p class="image-description">Takaisin etusivulle.</p>
+    </a>
     <div class="background-image"></div>
     <div class="center-text scrollable-content">
         <h1>Kanaa riisipedillä sipulikastikkeessa</h1>
         <p class="center-text">Pannulla paistettua kananfileetä ja jasmiiniriisiä peitettynä lempeän tulisella hunajasipulikastikkeella. </p>
+
+        <select id="recipe-dropdown">
+            <option value="ingredients">Ainesosat</option>
+            <option value="Riisi">Riisi</option>
+            <option value="Sipulikastike">Sipulikastike</option>
+            <option value="Kana">Kana</option>
+        </select>
+
+        <div id="recipe-section">
+            <div id="ingredients" class="recipe-content">
+                <p class="recipe-instructions">
+                    Ainesosat: (ohjeen määristä tulee noin 3 annosta)
+                </p>
+                <ul class="recipe-list">
+                    <li>Kanaan:</li>
+                    <li>300-400g kanafileetä</li>
+                    <li>Pankojauhoja</li>
+                    <li>Mausteet (suolaa, mustapippuria, valkosipulijauhetta, sipulijauhetta, savupaprikaa, cayennepippuria ja juustokuuminaa)</li>
+                    <li>Sipulikastikkeeseen:</li>
+                    <li>1 punasipuli</li>
+                    <li>25g voita</li>
+                    <li>25ml soijakastiketta</li>
+                    <li>15ml riisiviinietikkaa</li>
+                    <li>Hunajaa maun mukaan</li>
+                    <li>Mausteet (suolaa, mustapippuria, tuoretta murskattua valkosipulia (tai valkosipulijauhetta), kuivattuja chililastuja)</li>
+                    <li>Riisiin:</li>
+                    <li>2dl riisiä</li>
+                    <li>3dl vettä</li>
+                    <li>Ripaus suolaa</li>
+                    <li>Pieni määrä rypsiöljyä</li>
+                </ul>
+            </div>
+            <div id="riisi" class="recipe-content">
+                <p class="recipe-instructions">
+                    Riisi
+                </p>
+                <ul class="recipe-list">
+                    <li>Mittaa ja pese riisi huolellisesti.</li>
+                    <li>Kuumenna kattila, ja kaada pohjalla hieman rypsiöljä.</li>
+                    <li>Kaada pesty riisi kattilaan ja pyörittele jatkuvasti noin minuutin ajan.</li>
+                    <li>Kaada vesi kattilaan, lisää ripaus suolaa ja sekoita välillä kunnes vesi kiehuu.</li>
+                    <li>Peitä kattila kannella ja anna riisin hautua 15 minuutin ajan. Älä nosta kantta.</li>
+                    <li>15 minuutin jälkeen nosta kattila pois lämmöltä ja anna riisin levätä kannen alla noin 10 minuuttia.</li>
+                    <li>Pyörittele riisiä kuohkeaksi haarukalla ennen tarjoilua.</li>
+                </ul>
+            </div>
+            <div id="kana" class="recipe-content">
+                <p class="recipe-instructions">
+                    Kana
+                </p>
+                <ul class="recipe-list">
+                    <li>Pyörittele kanafileet kulhossa ensin mausteiden kanssa ja lopuksi lisäten pankojauhoja kunnes kaikki palat ovat peittyneet tasaisesti.</li>
+                    <li>Lämmitä paistinpannu keskikorkealla lämmöllä, lisää reilusti rypsiöljyä kunnes pannun pohja on peittynyt.</li>
+                    <li>Lisää kana pannulle ja paista muutaman minuutin ajan per puoli kunnes kaikki pinnat ovat rapeita ja kauniin ruskeita.</li>
+                    <li>Siirrä kanat sivuun ja aloita sipulikastike.</li>
+                </ul>
+            </div>
+            <div id="sipulikastike" class="recipe-content">
+                <p class="recipe-instructions">
+                    Sipulikastike
+                </p>
+                <ul class="recipe-list">
+                    <li>Laske lämpö keskilämmölle ja lisää pienitty punasipuli samalle pannulle jossa paistoit kanat, raaputa pannun pinnasta kiinni jääneet palat sipulin sekaan.</li>
+                    <li>Lisää pieni ripaus suolaa, mustapippuri ja chililastut sipulin sekaan.</li>
+                    <li>Kuullota sipulia mausteissa muutama minuutti.</li>
+                    <li>Laske lämpöä, laita voi keskelle pannua ja kaada päälle valkosipuli ja hunajaa.</li>
+                    <li>Lisää soijakastike ja riisiviinietikka, sekoittele muutama minuutti.</li>
+                </ul>
+            </div>
+        </div>
         <img class="image1" src="Kana2.jpg" alt="Resepti sivun kuva. Kanaa riisipedillä sipulikastikkeessa.">
-     </div>
+        <p class="image-description">Tarjoile esimerkiksi pikkelöidyn punasipulin, perunasalaatin ja mustaherukkahyytelön kanssa.</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
