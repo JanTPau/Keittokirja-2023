@@ -69,3 +69,9 @@ p.center-text {
     color: purple; /* Text color */
     font-size: 40px;
 }
+
+#recipe-dropdown {
+    font-family: Arial, sans-serif; /* Replace with your preferred font-family */
+    font-size: 45px; /* Adjust the font size if needed */
+    /* Add any other desired styles here */
+}
