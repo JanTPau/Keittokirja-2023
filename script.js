@@ -1,11 +1,6 @@
 const dropdown = document.getElementById('recipe-dropdown');
 const recipeContent = document.getElementById('recipe-section');
 
-function setInitialDisplay() {
-    const initialRecipe = document.getElementById('ingredients');
-    initialRecipe.style.display = 'block';
-}
-
 dropdown.addEventListener('change', function() {
     const selectedValue = dropdown.value;
     const recipeDivs = document.querySelectorAll('.recipe-content');
@@ -17,4 +12,5 @@ dropdown.addEventListener('change', function() {
     selectedRecipe.style.display = 'block';
 });
 
-setInitialDisplay();
+const initialRecipe = document.getElementById('ingredients');
+initialRecipe.style.display = 'block';
