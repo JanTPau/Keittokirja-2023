@@ -10,30 +10,33 @@
         function fetchAndDisplayRecipes() {
             const recipeContainer = document.getElementById('recipe-container');
 
-            fetch('json')
-                .then(response => response.json()) 
-                .then(recipes => {
-                    recipes.forEach(recipe => {
-                        const recipeDiv = document.createElement('div');
-                        recipeDiv.innerHTML = `
-                            <h2>${recipe.title}</h2>
-                            <p><strong>Ingredients:</strong></p>
-                            <ul>
-                                ${recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
-                            </ul>
-                            <p><strong>Instructions:</strong></p>
-                            <ol>
-                                ${recipe.instructions.map(instruction => `<li>${instruction}</li>`).join('')}
-                            </ol>
-                            <img src="${Pikkelöitypunasipuli.jpg}" alt="${recipe.title}">
-                        `;
+            // Add a timer to delay the fetch and display by 2 seconds (2000 milliseconds)
+            setTimeout(() => {
+                fetch('json')
+                    .then(response => response.json()) 
+                    .then(recipes => {
+                        recipes.forEach(recipe => {
+                            const recipeDiv = document.createElement('div');
+                            recipeDiv.innerHTML = `
+                                <h2>${recipe.title}</h2>
+                                <p><strong>Ingredients:</strong></p>
+                                <ul>
+                                    ${recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+                                </ul>
+                                <p><strong>Instructions:</strong></p>
+                                <ol>
+                                    ${recipe.instructions.map(instruction => `<li>${instruction}</li>`).join('')}
+                                </ol>
+                                <img src="${recipe.image}" alt="${recipe.title}">
+                            `;
 
-                        recipeContainer.appendChild(recipeDiv);
+                            recipeContainer.appendChild(recipeDiv);
+                        });
+                    })
+                    .catch(error => {
+                        console.error('Error loading recipes:', error);
                     });
-                })
-                .catch(error => {
-                    console.error('Error loading recipes:', error);
-                });
+            }, 2000); // Set the delay to 2000 milliseconds (2 seconds)
         }
 
         fetchAndDisplayRecipes();
