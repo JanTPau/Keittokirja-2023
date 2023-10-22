@@ -7,15 +7,12 @@
     <div id="recipe-container"></div>
 
     <script>
-        // Function to fetch and display recipes
         function fetchAndDisplayRecipes() {
             const recipeContainer = document.getElementById('recipe-container');
 
-            // Fetch the recipes.json file
             fetch('json')
-                .then(response => response.json()) // Parse the JSON response
+                .then(response => response.json()) 
                 .then(recipes => {
-                    // Loop through the recipes and create HTML elements for each
                     recipes.forEach(recipe => {
                         const recipeDiv = document.createElement('div');
                         recipeDiv.innerHTML = `
@@ -28,10 +25,9 @@
                             <ol>
                                 ${recipe.instructions.map(instruction => `<li>${instruction}</li>`).join('')}
                             </ol>
-                            <img src="${recipe.image}" alt="${recipe.title}">
+                            <img src="${Pikkelöitypunasipuli.jpg}" alt="${recipe.title}">
                         `;
 
-                        // Append the recipe to the container
                         recipeContainer.appendChild(recipeDiv);
                     });
                 })
@@ -40,7 +36,6 @@
                 });
         }
 
-        // Call the function to load and display recipes
         fetchAndDisplayRecipes();
     </script>
 </body>
