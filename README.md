@@ -21,10 +21,11 @@
 
 ## JavaScript Basics - 2.5/5
 - Simple interactions (like alerts on button click) -> 1 piste
-- Multiple event listeners and basic DOM manipulations -> pistettä
+- Multiple event listeners and basic DOM manipulations -> 1 pistettä
 - Use of arrays, objects, and functions -> 0.5 pistettä
 - Advanced logic, looping through data, and dynamic DOM updates -> 0 pistettä
 - Consistent use of Object-Oriented JavaScript principles -> 0 pistettä
+- Katso tiedosto: script.js
 
 ## Asynchronous Operations - 4/5
 - Use of timers -> 1 piste
